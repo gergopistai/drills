@@ -125,7 +125,7 @@ void Token_stream::ignore(char c)
 		if (ch == c) return;
 }
 
-// Token stream helpers
+// Token stream utility
 void clean_up_mess()
 { 
 	ts.ignore(print);
@@ -140,7 +140,7 @@ struct Variable {
 // Used to store user-defined variables
 vector<Variable> names;
 
-// Variable helpers
+// Variable utility
 double get_value(string s)
 {
 	for (int i = 0; i < names.size(); ++i)
@@ -160,7 +160,7 @@ bool is_declared(string s)
 	return false;
 }
 
-// Grammar helpers
+// Grammar utility
 double square_root()
 {
 	Token t = ts.get();
