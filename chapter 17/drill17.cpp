@@ -90,10 +90,10 @@ int main()
 	delete[] p1;
 	delete[] p2;
 
-	vector<int> p1_v {1, 2, 4, 8, 16, 32, 64, 128, 256, 512};
-	vector<int> p2_v = vector<int>(10);
+	vector<int> vec1 {1, 2, 4, 8, 16, 32, 64, 128, 256, 512};
+	vector<int> vec2 = vector<int>(10);
 
-	for (int i = 0; i < 10; i++) p2_v[i] = p1_v[i];
+	vec2 = vec1;
 
 	keep_window_open();
 	return 0;
