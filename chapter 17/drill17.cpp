@@ -67,6 +67,7 @@ int main()
 	cout << left << setw(14) << "p2:" <<  p2 << '\n'
 		 << "p2's values:\n";
 	for (int i = 0; i < 7; i++) cout << p2[i] << '\n';
+	cout << &p2[1] << '\n';
 
 	int* p3 = p2;
 

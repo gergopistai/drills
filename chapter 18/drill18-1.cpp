@@ -9,6 +9,7 @@ void f(int arr[], int len)
 
 	cout << "la:\n";
 	for (int i = 0; i < 10; i++) cout << la[i] << '\n';
+	cout << '\n';
 
 	int* p = new int[len];
 	for (int i = 0; i < len; i++)
@@ -25,6 +26,7 @@ void f(int arr[], int len)
 		p++;
 	}
 	p -= len;
+	cout << '\n';
 
 	delete[] p;
 }
